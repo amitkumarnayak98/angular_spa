@@ -4,11 +4,14 @@ import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { AngularMaterialModule } from '../angular-material-module/material-module/angular-material.module';
+import { SigninComponent } from './signin/signin.component';
 // import { MaterialModuleModule } from 'angular-material-module/material-module/material-module.module';
 // import { LoginDialogComponent } from './login-dialog/login-dialog.component';
 @NgModule({
   declarations: [
     // LoginDialogComponent,
+
+    SigninComponent,
   ],
   imports: [
     CommonModule,
@@ -19,6 +22,7 @@ import { AngularMaterialModule } from '../angular-material-module/material-modul
   ],
   exports: [
     // LoginDialogComponent,
+    SigninComponent,
     AngularMaterialModule,
     FormsModule,
     ReactiveFormsModule,
