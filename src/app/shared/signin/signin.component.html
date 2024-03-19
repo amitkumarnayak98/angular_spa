@@ -1,0 +1,72 @@
+<div class="sign_in flex-column">
+  <div class="sign_in-header justify-space-between">
+    <div class="disp-flex font_bold">
+      <p class="font_12rem heading">C</p>
+      <p class="font_12rem">reative</p>
+    </div>
+    <div class="disp-flex font_reg">
+      <p class="font_10rem">New User?&nbsp;</p>
+      <a class="font_10rem sign-up">Sign Up</a>
+    </div>
+  </div>
+  <div class="sign_in-body flex-row">
+    <div class="body-image">
+      <img
+        src="../../../assets/images/Benefits-of-teamwork-and-collaboration-for-software-development-teams.jpg"
+        alt="Web development body image"
+        class="development-image"
+      />
+    </div>
+    <div class="input-text font_reg">
+      <div class="text">
+        <p class="font_bold welcome-text">Welcome Back!</p>
+        <p class="font_85rem login-text">Login to continue</p>
+      </div>
+      <div class="flex-column">
+        <mat-form-field class="form-field">
+          <mat-label>Email</mat-label>
+          <input matInput type="text" aria-label="Enter email" id="" />
+        </mat-form-field>
+        <mat-form-field class="form-field">
+          <mat-label>Password</mat-label>
+          <input
+            matInput
+            [type]="showPassword ? 'text' : 'password'"
+            aria-label="Enter password"
+            id=""
+          />
+          <mat-icon matSuffix (click)="toggleVisibility()" class="pointer">{{
+            showPassword ? "visibility_off" : "visibility"
+          }}</mat-icon>
+        </mat-form-field>
+      </div>
+      <div class="btn-box disp-flex">
+        <button mat-raised-button class="btn-enabled login-btn">Login</button>
+        <button mat-button class="btn-disabled font_075rem">
+          Forget Password
+        </button>
+      </div>
+    </div>
+  </div>
+  <div class="sign_in-footer flex-end align-center font_reg">
+    <p class="font_85rem login-with">Login With</p>
+    <img
+      mat-menu-item
+      src="../../../assets/images/icons8-google-48.png"
+      alt=""
+      class="Login by google"
+    />
+    <img
+      mat-menu-item
+      src="../../../assets/images/icons8-facebook-48.png"
+      alt=""
+      class="Login by facebook"
+    />
+    <img
+      mat-menu-item
+      src="../../../assets/images/icons8-instagram-48.png"
+      alt=""
+      class="Login by instagram"
+    />
+  </div>
+</div>

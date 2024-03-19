@@ -177,3 +177,44 @@ body {
 
 // // The "warn" palette is optional and defaults to red if not specified.
 // $my-warn: mat-palette($red-palette);
+
+.btn-disabled {
+  cursor: unset;
+  filter: grayscale(1);
+  pointer-events: none;
+  opacity: 0.5;
+  text-transform: uppercase;
+}
+
+.btn-enabled {
+  box-shadow: unset;
+  padding: 10px 20px;
+  line-height: inherit;
+  font-size: 0.9rem;
+  color: white;
+  background-color: $btnColor;
+  text-transform: uppercase;
+  // font-family: $RobotoBold;
+  letter-spacing: 1.25px;
+  width: fit-content;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  // @include layout(767) {
+  //   padding: 7px 15px;
+  //   font-size: 0.75rem;
+  // }
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+::ng-deep {
+  .mat-form-field-outline-start,
+  .mat-form-field-outline-end {
+    border-radius: 0px 0 0 0px !important;
+    border-right-style: none;
+    border-left-style: none;
+  }
+}

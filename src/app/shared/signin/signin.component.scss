@@ -1,0 +1,81 @@
+@import "../../../styles.scss";
+.sign_in {
+  height: calc(100vh - 70px);
+  width: 75vw;
+  background-color: $commanWhite;
+  box-shadow: 0 5px 5px -3px #0003, 0 8px 10px 1px #00000024,
+    0 3px 14px 2px #0000001f;
+
+  gap: 20px;
+
+  &-header {
+    padding: 30px 50px;
+
+    div.disp-flex {
+      .heading,
+      .sign-up {
+        // p.heading {
+        color: #3930d8;
+        // }
+      }
+    }
+  }
+
+  &-body {
+    gap: 20px;
+
+    .body-image,
+    .input-text {
+      width: calc(50% - 10px);
+
+      .development-image {
+        width: -webkit-fill-available;
+      }
+
+      div.text {
+        padding: 20px 20px;
+        p.welcome-text {
+          font-size: 1.35rem;
+        }
+
+        p.login-text {
+          margin-top: 5px;
+          color: $greyTextInfo;
+        }
+      }
+
+      .btn-box {
+        gap: 10px;
+        padding: 26px 20px 20px 20px;
+
+        .login-btn {
+          padding: 18.5px;
+          width: 27%;
+          border-radius: 60px 60px;
+        }
+      }
+    }
+  }
+
+  &-footer {
+    padding: 20px 50px 0px 0px;
+    gap: 30px;
+
+    .login-with {
+      color: $greyTextInfo;
+    }
+  }
+}
+
+:host ::ng-deep {
+  .form-field {
+    // height: 50px;
+    width: 75% !important;
+    padding-left: 20px !important;
+  }
+
+  .mat-menu-item:hover {
+    // .mat-menu-item[_ngcontent-qsk-c297]:hover:not([disabled])
+    border-radius: 20px !important;
+  }
+}
